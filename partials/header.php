@@ -25,7 +25,7 @@
 
 				<!-- The CEO's Name -->
 				<div class="td v-align-middle font-size-875 color-grey bold h-padded-more">
-					CEO: Mark H. Merril | CNO: Anne Whiteside
+					CEO: Patrick Cawley, M.D. MHM, FACHE | CNO: Jerry Mansfield PhD, RN
 				</div>
 
 			</div>

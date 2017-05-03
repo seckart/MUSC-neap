@@ -9,11 +9,11 @@
 	</p>
 
 	<p>
-		The market was defined as 45 miles, with hospitals of similarly staffed bed size (200-575).
+		The market radius was defined as 50 miles.
 	</p>
 
 	<p>
-		As compared to the hospitals in the selected area, Winchester appears to have far more leadership vacancies. Further, the RN vacancy is greater.
+		MUSC has nearly 70 FTE nurse vacancies, more than double all of Roper St Francis Health combined.
 	</p>
 
 	<img src="<?php echo $SPECDIR; ?>/external-horizontal-analysis-chart.png" alt="" />
