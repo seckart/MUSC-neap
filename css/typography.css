@@ -1,0 +1,168 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+h1 {
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+ul {
+	
+}
+
+li {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/* ANCHORS */
+a { cursor: pointer; }
+a.no-style, a.no-style:hover { text-decoration: none; color: inherit; }
+a.hover_under { text-decoration: none; }
+a.hover_under:hover { text-decoration: underline; }
+
+
+/* FONT WEIGHTS */
+.light { font-weight: 400; }
+.normal { font-weight: normal; }
+.semibold { font-weight: 700; }
+.bold { font-weight: 900; }
+
+
+/* TEXT DECORATION */
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+
+
+/* FONT SIZES */
+/* PX */
+.font-size-no { font-size: 0px; }
+.font-size-xs { font-size: 6px; }
+.font-size-xss { font-size: 8px; }
+.font-size-s { font-size: 10px; }
+.font-size-ss { font-size: 12px; }
+.font-size-m { font-size: 14px; }
+.font-size-mm { font-size: 16px; }
+.font-size-l { font-size: 18px; }
+.font-size-ll { font-size: 20px; }
+.font-size-xl { font-size: 24px; }
+.font-size-xxl { font-size: 30px; }
+/* 
+	EM 
+	'qt' stands for quarter (quarter of an 'em')
+	Change the font-size on a parent to make children scale
+*/
+.font-size-qt { font-size: .25em; }/* By Default: 4; */
+.font-size-half { font-size: .5em; }/* By Default: 8; */
+.font-size-625 { font-size: .625em; }/* By Default: 10; */
+.font-size-3qt { font-size: .75em; }/* By Default: 12; */
+.font-size-875 { font-size: .875em; }/* By Default: 14; */
+.font-size-one { font-size: 1em; }/* By Default: 16; */
+.font-size-125 { font-size: 1.125em; }/* By Default: 18; */
+.font-size-5qt { font-size: 1.25em; }/* By Default: 20; */
+.font-size-6qt { font-size: 1.5em; }/* By Default: 24; */
+.font-size-double { font-size: 2em; }/* By Default: 32; */
+.font-size-triple { font-size: 3em; }/* By Default: 48; */
+
+
+/* TEXT ALIGNMENT */
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+.v-align-bottom { vertical-align: bottom;  }
+.v-align-middle { vertical-align: middle;  }
+.v-align-top { vertical-align: top;  }
+
+
+/* LINE HEIGHTS */
+.line-taller { line-height: 1.4;  }
+
+/* CURSOR */
+.pointer { cursor: pointer; }
+
+/* BLOCK SHAPE TEXT */
+.text-block {
+	font-size: 0.875em;
+	padding: 1.25em .7em;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* A callout is a block of content that has a border 
+	and some inner padding. The purpose is to "call out" some
+	important text or something. */
+.callout {
+	border-width: 1px;
+	border-style: solid;
+	padding: 12px;
+}
+	/* Constraining a callout will limit it's width and 
+		center the callout horizontally on the page. */
+	.callout.constrained {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	/* Generally, you'll set the color of the border directly on
+		the element using one of the border- classes.
+		But these two classes below will let you create site-wide
+		border colors, which might pertain to the hospital's colors.
+		This way, you can set tons of callouts to be hospital specific,
+		for each NEAP project. */
+	.callout.brand-primary {
+		border-color: blue;
+	}
+	.callout.brand-accent {
+		border-color: green;
+	}
+
+i.search {
+	display: inline-block;
+	background-image: url('../img/template/search_icon.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+}
+
+/* */
+.v-divide {
+	border-right: 1px solid white;
+    display: inline-block;
+    background-color: white;
+    width: 1px;
+    margin: 0 2px;
+    padding: 0;
+}
+

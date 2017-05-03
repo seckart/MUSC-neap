@@ -1,0 +1,125 @@
+/**
+ *	Rules for changing the color of text
+ */
+.color-black { color: #000000; }
+.color-almost-black { color: #262729; }
+.color-white { color: #ffffff; }
+.color-almost-white { color: #eaeaea; }
+.color-yellow { color: yellow; }
+.color-green { color: green; }
+.color-light-green { color: #bddb8b; }
+.color-dark-green { color: #97AF6F; }
+.color-blue { color: blue; }
+.color-red { color: red; }
+.color-peach { color: #FABF8F; }
+.color-tan-orange { color: #ffb74c; }
+.color-lightest-orange { color: #FFA953; }
+.color-light-orange { color: #F4E0CC; }
+.color-orange { color: orange; }
+.color-darker-orange { color: #E68F1A; }
+.color-darkest-orange { color: #eb7e23; }
+.color-bronze { color: #cc6600; }
+.color-lightest-grey { color: #cecccc; }
+.color-light-grey { color: #a7a7a7; }
+.color-grey { color: #808281; }
+.color-dark-grey { color: #666666; }
+.color-brand-red { color: #DB7775; }
+.color-brand-green { color: #BDDB8B; }
+.color-brand-orange { color: #FF9900; }
+.color-brand-yellow	{ color: #edd760; }
+.color-magnet-green { color: #1F8C74; }
+
+/**
+ *	Rules for changing the color of links
+ *	They are different because of:
+ *		visited 
+ */
+.color-black:visited { color: #000000; }
+.color-almost-black:visited { color: #262729; }
+.color-white:visited { color: #ffffff; }
+.color-almost-white:visited { color: #eaeaea; }
+.color-yellow:visited { color: yellow; }
+.color-light-green:visited { color: #bddb8b; }
+.color-green:visited { color: green; }
+.color-dark-green:visited { color: #97AF6F; }
+.color-blue:visited { color: blue; }
+.color-red:visited { color: red; }
+.color-peach:visited { color: #FABF8F; }
+.color-tan-orange:visited { color: #ffb74c; }
+.color-lightest-orange:visited { color: #FFA953; }
+.color-light-orange:visited { color: #F4E0CC; }
+.color-orange:visited { color: orange; }
+.color-darker-orange:visited { color: #E68F1A; }
+.color-darkest-orange:visited { color: #eb7e23; }
+.color-bronze:visited { color: #cc6600; }
+.color-lightest-grey:visited { color: #cecccc; }
+.color-light-grey:visited { color: #a7a7a7; }
+.color-grey:visited { color: #808281; }
+.color-dark-grey:visited { color: #666666; }
+.color-brand-red:visited { color: #DB7775; }
+.color-brand-green:visited { color: #BDDB8B; }
+.color-brand-orange:visited { color: #FF9900; }
+.color-brand-yellow:visited	{ color: #edd760; }
+.color-magnet-green:visited { color: #1F8C74; }
+
+/**
+ *	Rules for changing the background color of an element
+ */
+.bg-black { background-color: #000000; }
+.bg-almost-black { background-color: #262729; }
+.bg-white { background-color: #ffffff; }
+.bg-almost-white { background-color: #eaeaea; }
+.bg-yellow { background-color: yellow; }
+.bg-light-green { background-color: #bddb8b; }
+.bg-green { background-color: green; }
+.bg-dark-green { background-color: #97AF6F; }
+.bg-blue { background-color: blue; }
+.bg-red { background-color: red; }
+.bg-peach { background-color: #FABF8F; }
+.bg-tan-orange { background-color: #ffb74c; }
+.bg-lightest-orange { background-color: #FFA953; }
+.bg-light-orange { background-color: #F4E0CC; }
+.bg-orange { background-color: orange; }
+.bg-darker-orange { background-color: #E68F1A; }
+.bg-darkest-orange { background-color: #eb7e23; }
+.bg-bronze { background-color: #cc6600; }
+.bg-lightest-grey { background-color: #cecccc; }
+.bg-light-grey { background-color: #a7a7a7; }
+.bg-grey { background-color: #808281; }
+.bg-dark-grey { background-color: #666666; }
+.bg-brand-red { background-color: #DB7775; }
+.bg-brand-green { background-color: #BDDB8B; }
+.bg-brand-orange { background-color: #FF9900; }
+.bg-brand-yellow { background-color: #edd760; }
+.bg-magnet-green { background-color: #1F8C74; }
+
+/**
+ *	Rules for changing the border colors of elements
+ */
+.border-black { border-color: #000000; }
+.border-almost-black { border-color: #262729; }
+.border-white { border-color: #ffffff; }
+.border-almost-white { border-color: #eaeaea; }
+.border-yellow { border-color: yellow; }
+.border-green { border-color: green; }
+.border-light-green { border-color: #bddb8b; }
+.border-dark-green { border-color: #97AF6F; }
+.border-blue { border-color: blue; }
+.border-red { border-color: red; }
+.border-peach { border-color: #FABF8F; }
+.border-tan-orange { border-color: #ffb74c; }
+.border-lightest-orange { border-color: #FFA953; }
+.border-light-orange { border-color: #F4E0CC; }
+.border-orange { border-color: orange; }
+.border-darker-orange { border-color: #E68F1A; }
+.border-darkest-orange { border-color: #eb7e23; }
+.border-bronze { border-color: #cc6600; }
+.border-lightest-grey { border-color: #cecccc; }
+.border-light-grey { border-color: #a7a7a7; }
+.border-grey { border-color: #808281; }
+.border-dark-grey { border-color: #666666; }
+.border-brand-red { border-color: #DB7775; }
+.border-brand-green { border-color: #BDDB8B; }
+.border-brand-orange { border-color: #FF9900; }
+.border-brand-yellow	{ border-color: #edd760; }
+.border-magnet-green { border-color: #1F8C74; }

@@ -1,0 +1,125 @@
+form {
+	margin: 0;
+	padding: 0;
+}
+	
+	/* All Inputs */	
+	input {
+		border: none;
+		display: block;
+		margin: 0;
+		padding: 5px;
+		font-size: 0.9em;
+	}
+		input:focus {
+			outline: none;
+		}
+
+	/* Button Inputs */
+	input[type="submit"],
+	input[type="button"] {
+		cursor: pointer;
+	}
+
+	/* Hidden Inputs */
+	input[type="hidden"] {
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	/* Form Labels */
+	form label {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* .invalid would be the error message attached to a form input
+		when something went wrong. Probably would put it underneath
+		the input. */
+	form .invalid {
+		color: #ffffff;
+	    background-color: #656565;
+	    margin: 0px auto 8px auto;
+	    width: 80%;
+	    display: none;
+	    padding: 1px;
+	    text-align: center;
+	    font-size: .75em;
+	    font-style: italic;
+	}
+		form .invalid.showing {
+			display: block;
+		}
+
+
+/* BUTTON styles */
+
+/* All .btn's are bold */
+.btn {
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+}
+
+/* An orange button, with a darker orange hover effect and white text */
+.btn.btn-orange{
+	background-color: #ffb74c; /* matches .bg-tan-orange */
+	color: #ffffff; /* white */
+	-moz-transition: background-color .51s;
+	-o-transition: background-color .51s;
+	-webkit-transition: background-color .51s;
+	transition: background-color .51s;
+}
+	.btn.btn-orange:hover {
+		background-color: #FF9900; /* matches .bg-brand-orange */
+	}
+
+/* Zoom Form Overrides */
+/* The parts of the search results that are highlighted with the keyword */
+/* As well as every page of the site that might have the .highlight class
+	as a result of the zoom search engine */
+.highlight { background-color: #e0a279; }
+.zoom_form { font-size: 16px; }
+.zoom_form .zoom_searchform { padding: 15px 0 0 0; }
+.zoom_form .zoom_searchform input { display: inline-block; }
+.zoom_form .zoom_searchform input[type="text"] { width: 200px; border: 1px solid black; }
+/* The text that says "Search results for: xyz" */
+.zoom_form .searchheading { font-weight: bold; font-size: 1.5em; }
+/* The text that says "15 results found" */
+.zoom_form .summary { font-style: italic; font-size: .75em; }
+/* The text that says "2 pages of results" */
+.zoom_form .result_pagescount { font-size: 1em; }
+/* The top of every search result. Looks like "2. The Title" */
+.zoom_form .result_title { color: #cc6600; }
+/* The main links for each result */
+.zoom_form .result_title a { text-decoration: none; color: inherit; font-size: 1em; }
+.zoom_form .result_title a:visited { text-decoration: none; color: inherit; font-size: 1em; }
+/* The textual description for each result */
+.zoom_form .description { font-size: 1em; color: #262729; }
+/* The container for radio buttons for how you want to match the search */
+.zoom_form .zoom_match {}
+.zoom_form .zoom_match input[type="radio"] { padding: 0px; margin: 5px 8px 5px 16px; }
+/* The Search Button */
+.zoom_form input[type="submit"] { padding: 6px 13px; background-color: #cc6600; color: #fff; }
+.zoom_form input[type="submit"]:hover { background-color: orange; }
+/* The text that says "Powered by zoom" */
+.zoom_form small { display: none; }
+/* The Results per page select */
+.zoom_form .zoom_results_per_page select { font-size: 14px; }
+.zoom_form .zoom_results_per_page select:focus { outline: none; }
+/* The meta text below a search result */
+.zoom_form .infoline { font-style: normal; color: #808080; font-size: .75em; }
+/* Images in search results (I've yet to see one of these) */
+.zoom_form .result_image { float: left; display: block; }
+.zoom_form .result_image img { margin: 10px; width: 80px; border: 0px; }
+/* Each search result is in one of these blocks */
+.zoom_form .result_block { margin-top: 15px; margin-bottom: 20px; clear: left; }
+.zoom_form .result_altblock { margin-top: 15px; margin-bottom: 20px; clear: left; }	
+
+
+
+
+
+

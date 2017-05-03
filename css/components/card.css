@@ -1,0 +1,91 @@
+.card {
+	position: relative;
+	width: 198px;
+	height: 215px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+	.card.blue {
+		background-image: url('../../img/template/hlx-box-blue.jpg');
+	}
+
+	.card.purple {
+		background-image: url('../../img/template/hlx-box-purple.jpg');
+	}
+
+	
+
+/* The text within the card */
+.card .title,
+.card .desc {
+	position: absolute;
+	text-align: center;
+	padding: 0px 17px;
+	padding: 0px 15px 0px 11px;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+/* The Top Title text */
+.card .title {
+	color: #ffffff;
+	top: 23%;
+}
+
+/* The Middle Descriptive text */
+.card .desc {
+	color: #000000;
+	top: 53%;
+}
+
+/* A Smaller Version of the card */
+.card.small {
+	width: 170px;
+	height: 185px;
+}
+	.card.small .title,
+	.card.small .desc {
+		font-size: .87em;
+	}
+	.card.small .title {
+		top: 22%;
+	}
+	.card.small .desc {
+		top: 56%;
+	}
+
+/* A card-like component, specifically for case studies. */
+.case-study {
+	background-image: url('../../img/template/case-study-folder.jpg');
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+	display: inline-block;
+    height: 210px;
+	position: relative;
+    padding-bottom: 45px;
+    width: 188px;
+    overflow: auto;
+}
+	.case-study .title {
+	    color: #000000;
+	    bottom: 0px;
+	    font-weight: bold;
+	    font-size: .875em;
+	    left: 0;
+		position: absolute;
+	    text-align: center;
+	    width: 100%;
+	}
+
+/* A smaller variety of the case-study component */
+.case-study.small {
+	width: 170px;
+	height: 195px;
+}

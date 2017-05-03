@@ -1,0 +1,122 @@
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* Some basic styles for a profile image
+	The dimensions should be overwritten always if used in the
+	prof-img-wrapper setup */
+img.profile-img {
+	border-radius: 50%;
+    width: 11vw;
+    height: 11vw;
+    max-width: 220px;
+    max-height: 220px;
+    /*border: 5px solid #b56328;*/
+    border-width: 6px;
+    border-style: solid;
+    image-rendering: -webkit-optimize-contrast;
+}
+	img.profile-img.less-border {
+		border-width: 4px;
+	}
+
+/**
+ *	Profile Image Component
+ *
+ *	The setup should be:
+ *		.prof-img-wrapper
+ *			div
+ *				img.profile-img
+ *
+ *	The width set on the .prof-img-wrapper determines the 
+ *	width and height of the rounded image. The image will
+ *	always have equal width and heights.
+ *
+ */
+.prof-img-wrapper {
+	position: relative;
+    overflow: hidden;
+    /* Height will end up matching this width */
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 280px;
+}
+	
+	.prof-img-wrapper.border-red > div { background-color: #DB7775; }
+	.prof-img-wrapper.border-red img.profile-img { border-color: #DB7775; }
+
+	.prof-img-wrapper.border-bronze > div { background-color: #cc6600; }
+	.prof-img-wrapper.border-bronze img.profile-img { border-color: #cc6600; }
+
+	.prof-img-wrapper.border-yellow > div { background-color: #edd760; }
+	.prof-img-wrapper.border-yellow img.profile-img { border-color: #edd760; }
+
+	.prof-img-wrapper.border-green > div { background-color: #BDDB8B; }
+	.prof-img-wrapper.border-green img.profile-img { border-color: #BDDB8B; }
+
+	.prof-img-wrapper.border-grey > div { background-color: #808281; }
+	.prof-img-wrapper.border-grey img.profile-img { border-color: #808281; }
+
+
+	/* Fill the div with height that is equal to the div's width
+		This is a browser hack */
+	.prof-img-wrapper:before {
+		content: '';
+		/* Set Height equal to width to create a square */
+	    padding-top: 100%;
+	    float: left;
+	}
+
+	/**
+	 *	Fill the prof-img-wrapper with a solid background color
+	 *	This background color should match the intended border color
+	 *	The background color will prevent the stupid border line problem
+	 *		on IE.
+	 */ 
+	.prof-img-wrapper > div {
+		/*background-color: #b56328;*/
+	    width: 100%;
+	    height: 100%;
+	    border-radius: 50%;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	}
+
+	/* The <img> element */
+	.prof-img-wrapper img.profile-img {
+		max-width: none;
+	    max-height: none;
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    bottom: 0;
+	}
+
+	.to-top {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 25px;
+		height: 25px;
+		position: fixed;
+		bottom: 25px;
+		right: 25px;
+		z-index: 20;
+		cursor: pointer;
+		border-radius: 0%;
+		-moz-transition: all .51s;
+		-o-transition: all .51s;
+		-webkit-transition: all .51s;
+		transition: all .51s;
+	}
+		.to-top:hover {
+			border-radius: 50%;
+		}

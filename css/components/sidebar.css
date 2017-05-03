@@ -1,0 +1,186 @@
+/**
+ *	The sidebar lives on the left side of the document.
+ *
+ *	Structure
+ *	---------
+ *	It uses a nested set of <ul> and <li> to achieve
+ *		a "nested navigation" effect.
+ *
+ *	.sidebar
+ *		.dates
+ *		ul.sidebar-menu
+ *			li
+ *			li
+ *				.nav_label
+ *				ul.nested-menu
+ *					li
+ *					li
+ *						.nav_label
+ *						ul.nested-menu
+ *							li
+ *					li
+ *			li
+ *
+ *
+ *
+ *	Expanding and Collapsing
+ *	------------------------
+ *	It's worth noting, some <ul>'s may be immediately preceded by
+ *	a <div>. This div serves the purpose of a label. When clicked,
+ *	the <div> will expand and collapses the sibling <ul>.
+ *
+ *
+ *	CHANGING THE WIDTH OF THE SIDEBAR
+ * 	---------------------------------
+ * 	You should update:
+ *		This file, .sidebar's "width"
+ *		layout.css, .content_wrapper's "padding-left"
+ *		This file, .sidebar_imitator's "width"
+ *		show.js has a ShowOrHideSidebar(), update the line
+ *			with "var width = ......."
+ *
+ */
+
+.sidebar {
+	float: left;
+	position: relative;
+	/* Update the other references, see the comment at the top */
+	width: 300px;
+	font-size: 16px;
+	color: #ffffff; /* white */
+	z-index: 3;
+	background-color: #262729;/* Matches .color-almost-black */
+}
+
+
+/* Strip styling from all <ul> and <li> within the sidebar */
+.sidebar ul,
+.sidebar li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Set the font size for ALL of the text in the sidebar */
+.sidebar a,
+.sidebar a:visited,
+.sidebar-menu .nav_label,
+.dates {
+	color: #cecccc; /* Matches .color-lightest-grey */
+	text-decoration: none;
+	font-size: .8em;/* base font set in .sidebar */
+}
+
+/* Make All Menu Items Blocky and Fat */
+.sidebar-menu li a,
+.sidebar-menu li .nav_label {
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	display: block; /* In order to add padding to <a> */
+	padding-top: 0.8em; /* Makes the blocks fat */
+	padding-bottom: 0.8em; /* Makes the blocks fat */
+	padding-right: 25px; /* Get the text off of the right edge */
+	line-height: 1.5;
+}
+
+
+/* TOP LEVEL MENU ITEMS */
+.sidebar-menu > li a,
+.sidebar-menu > li .nav_label {
+	padding-left: 15px;
+}
+	/* Hover Effect For TOP LEVEL Menu Items */
+	.sidebar-menu > li a.active,
+	.sidebar-menu > li a:hover,
+	.sidebar-menu > li .nav_label:hover {
+		background-color: #CC6600; /* Matches .bg-bronze */
+		color: #ffffff; /* white */
+	}
+	/* Bottom Border Color For TOP LEVEL Menu Items */
+	.sidebar-menu > li:not(:last-child) {
+		border-bottom: 1px solid #666666;/* Dark Grey */
+	}
+
+
+/* SECOND LEVEL MENU ITEMS  */
+.sidebar-menu .nested-menu a,
+.sidebar-menu .nested-menu .nav_label {
+	padding-left: 30px;
+	color: #eaeaea;/* Matches .color-almost-white */
+	background-color: #646464;/* Lighter shade of grey than bg */
+}
+	/* Hover Effect For SECOND LEVEL Menu Items */
+	.sidebar-menu .nested-menu a:active,
+	.sidebar-menu .nested-menu a:hover,
+	.sidebar-menu .nested-menu .nav_label:hover {
+		color: #ffffff;/* White */
+		background-color: #a7a7a7; /* Matches .bg-light-grey */
+	}
+	/* Bottom Border Color For SECOND LEVEL Menu Items */
+	.sidebar-menu li li:not(:last-child) {
+		border-bottom: 1px solid #9c9c9c;
+	}
+
+
+/* THIRD LEVEL MENU ITEMS  */
+.sidebar-menu .nested-menu .nested-menu a,
+.sidebar-menu .nested-menu .nested-menu .nav_label {
+	background-color: #eaeaea; /* Matches .color-almost-white */
+	color: #656565; /* Darkish Grey */
+	padding-left: 45px;
+}
+	/* Hover Effect For THIRD LEVEL Menu Items */
+	.sidebar-menu .nested-menu .nested-menu a.active,
+	.sidebar-menu .nested-menu .nested-menu a:hover,
+	.sidebar-menu .nested-menu .nested-menu .nav_label:hover {
+		background-color: #F4E0CC; /* Matches .bg-light-orange */
+	}
+	/* Bottom Border Color For THIRD LEVEL Menu Items */
+	.sidebar-menu li li li:not(:last-child) {
+		border-bottom: 1px solid #a0a0a0;
+	}
+
+/* The little arrow that shows to the right of navigation
+	items that expand and collapse. It's what indicates
+	that a given menu item CAN expand and collapse. */
+.sidebar-menu .nav_label:before {
+	content: '';
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translate(0%, -50%);
+	width: 10px;
+	height: 10px;
+	background-image: url('../../img/template/down-arrows.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+/* The Block In The Sidebar that has the upcoming dates */
+.sidebar .dates {
+	min-height: 14.5em;/* base font set in .sidebar */
+	width: 100%;
+}
+
+
+/* This is a div, that is the same color as the sidebar.
+	It sits behind the sidebar, behind the header, behind the footer
+		but on top of the content
+	It is position: fixed; to the same position as the sidebar
+	It gives the impression that it IS the sidebar, so that when you scroll
+		down the page, the sidebar appears to be of the precise height
+		of the page (but it's really just the height of your monitor)
+	*/
+.sidebar_imitator {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #262729;/* Same color as .sidebar */
+	/* Update the other references, see the comment at the top */
+	width: 300px;/* Matches .sidebar's width */
+	z-index: 2;
+}

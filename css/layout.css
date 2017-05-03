@@ -1,0 +1,348 @@
+/**
+ *		
+ *	SITE STRUCTURE (The Skeleton of the site):
+ *	------------------------------
+ *	.page_wrapper
+ *		.header
+ *		.page
+ *			.sidebar
+ *			.content_wrapper
+ 				.content
+ *		.footer
+ *	
+ *	Nothing EVER goes inside .page, .page_wrapper or .content_wrapper
+ *	except for what I listed above.
+ *	
+ *	Top Header Bar stuff goes inside the .header element
+ *		For HTML, Look inside:
+ *			/partials/document_header.php
+ *			/partials/header.php
+ *
+ *	The left sidebar stuff goes inside the .sidebar element
+ *		For HTML, Look inside:
+ *			/partials/sidebar.php
+ *
+ *	Page specific stuff goes inside the .content element
+ *		For HTML, This is one of the specific page files
+ *
+ *	The Footer Box stuff goes inside the .footer element
+ *		For HTML, Look inside:
+ *			/partials/document_footer.php
+ *			/partials/footer.php
+ *
+ *	Z-Index
+ * 	-----------
+ *	The Scroll To Top Button is z-index: 20;
+ *	The Header and Footer are z-index: 4;
+ *	The Searchbox is z-index: 3;
+ *	The Sidebar is z-index: 3;
+ *	The Sidebar Imitator is z-index 2;
+ *	The Content is z-index: 1;
+ *
+ *
+ *
+ *	Changing the height of the .header
+ *	-----------------------------------
+ *	If you want to change the height of the .header, you must do 
+ *	so in multiple places.
+ *	1) This file, in .header's "height"
+ *	2) This file, in .page's "padding-top"
+ *	3) content.css, in .searchbox's "top"
+ *	
+ *
+ */
+
+
+/* Wraps everything, including header, 
+	sidebar, all content, and footer */
+.page_wrapper {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+/* Header - The Bar at Top of the page */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
+	height: 64px; /* Remember to edit .page too */
+	width: 100%;
+	font-size: 16px;
+	z-index: 4;/* .page should be "behind" .header */
+	box-shadow: 0px 3px 5px -5px #a1a1a1; /* Light Grey */
+    -moz-box-shadow: 0px 3px 5px -5px #a1a1a1;
+    -webkit-box-shadow: 0px 3px 5px -5px #a1a1a1;
+}
+
+/* Page - Wraps the Sidebar and Content */
+.page {
+	padding-top: 64px;/* Accounts for the .header's height */
+	overflow: auto;/* Creates a block formatting context */
+	clear: both; /* .sidebar is floated inside .page */
+	z-index: 1;/* For clarity. .page should be "behind" .header */
+}
+
+	/* Account for the width of the sidebar
+		The padding-left must match the width of
+		the sidebar always. 
+		Read the comment in sidebar.css for what all to update */
+	.page .content_wrapper {
+		/* This should match 'width' in .sidebar and also show.js */
+		padding-left: 300px; 
+		z-index: 1;
+	}
+
+		.page .content {
+			display: block;
+			width: 100%;
+			overflow-x: hidden;
+		}
+
+/* Footer - The Box at Bottom of the page */
+.footer {
+	position: relative;
+	border-top: 1px solid black;
+	height: 240px;
+	width: 100%;
+	z-index: 4;
+}
+
+/* Elements with the .bg-image class are expected to have
+	an inline style denoting the background image.
+	It would look like:
+	<div class="bg-image" style="background-image: url('/img/bgimage.jpg');" 
+	*/
+.bg-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+/* GENERIC WIDTHS */
+.wid-fourth { width: 25%; }
+.wid-thirty { width: 30%; }
+.wid-fourty { width: 40%; }
+.wid-fourty-five { width: 45%; }
+.wid-half { width: 50%; }
+.wid-fifty-five { width: 55%; }
+.wid-sixty { width: 60%; }
+.wid-seventy { width: 70%; }
+.wid-three-fourth { width: 75%;}
+.wid-eighty { width: 80%; }
+.wid-eighty-five { width: 85%; }
+.wid-full { width: 100%; }
+/* Some Fixed Widths */
+.fixed-width-120 { width: 120px; min-width: 120px; }
+.fixed-width-185 { width: 185px; min-width: 185px; }
+.fixed-width-200 { width: 200px; min-width: 200px; }
+.fixed-width-300 { width: 300px; min-width: 300px; }
+/* Some Max Widths */
+.max-width-300 { max-width: 300px; }
+.max-width-500 { max-width: 500px; }
+.max-width-700 { max-width: 700px; }
+.max-width-1100 { max-width: 1100px; }
+/* Some Min Widths */
+
+
+/* GENERIC HEIGHTS */
+.height-fourth { height: 25%; }
+.height-thirty { height: 30%; }
+.height-fourty { height: 40%; }
+.height-half { height: 50%; }
+.height-sixty { height: 60%; }
+.height-seventy { height: 70%; }
+.height-three-fourth { height: 75%;}
+.height-full { height: 100%; }
+
+
+/* GENERIC POSITIONING */
+.float-left { float: left; }
+.float-right { float: right; }
+.over-auto { overflow: auto; }
+.over-hidden { overflow: hidden; }
+.overy-hidden { overflow-y: hidden; }
+.center-block { display: block; margin-left: auto; margin-right: auto; }
+.v-middle-inblock { display: inline-block; vertical-align: middle; }
+.v-top { vertical-align: top; }
+.v-middle { vertical-align: middle; }
+/* Parent gets align-center, match inline-center with align-left to reverse */
+.inline-center { width: auto; height: auto; display: inline-block; }
+.margin-zero-auto { margin: 0 auto; }
+/* Vertically center something within a container. But make sure the parent
+	has a position set of relative, fixed, or absolute as well. */
+.center-transform { 
+	position: absolute; 
+	left: 50%; 
+	top: 50%; 
+	transform: translate(-50%, -50%);
+}
+
+
+/* GENERIC DISPLAYS */
+.blk { display: block; }
+.inblk { display: inline-block; }
+.table { display: table; width: 100%; }
+.tr { display: table-row; }
+.td { display: table-cell; }
+.fullblk { display: block; width: 100%; height: 100%; }
+
+.v-center-inl:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+
+/* GENERIC PADDING */
+	/* All Around */
+.pd-barely { padding: 5px; }
+.pd-less { padding: 10px; }
+.pd { padding: 20px;	 }
+.pd-lots { padding: 30px; }
+.pd-more { padding: 40px; }
+.pd-875 { padding: 0.875em }
+	/* Horizontal */
+.h-gutters { padding-left: 1%; padding-right: 1%; }
+.h-padded-barely { padding-left: 5px; padding-right: 5px; }
+.h-padded-less { padding-left: 10px; padding-right: 10px; }
+.h-padded { padding-left: 20px; padding-right: 20px; }
+.h-padded-lots { padding-left: 30px; padding-right: 30px; }
+.h-padded-more { padding-left: 40px; padding-right: 40px; }
+	/* Vertical */
+.v-padded-barely { padding-top: 5px; padding-bottom: 5px; }
+.v-padded-less { padding-top: 10px; padding-bottom: 10px; }
+.v-padded { padding-top: 20px; padding-bottom: 20px; }
+.v-padded-lots { padding-top: 30px; padding-bottom: 30px; }
+.v-padded-more { padding-top: 40px; padding-bottom: 40px; }
+	/* Top */
+.top-pd-barely { padding-top: 5px; }
+.top-pd-less { padding-top: 10px; }
+.top-pd { padding-top: 20px; }
+.top-pd-lots { padding-top: 30px; }
+.top-pd-more { padding-top: 40px; }
+	/* Bottom */
+.bot-pd-barely { padding-bottom: 5px; }
+.bot-pd-less { padding-bottom: 10px; }
+.bot-pd { padding-bottom: 20px;	 }
+.bot-pd-lots { padding-bottom: 30px; }
+.bot-pd-more { padding-bottom: 40px; }
+	/* Left */
+.l-pd-barely { padding-left: 5px; }
+.l-pd-less { padding-left: 10px; }
+.l-pd { padding-left: 20px; }
+.l-pd-lots { padding-left: 30px; }
+.l-pd-more { padding-left: 40px; }
+	/* Right */
+.r-pd-barely { padding-right: 5px; }
+.r-pd-less { padding-right: 10px; }
+.r-pd { padding-right: 20px; }
+.r-pd-lots { padding-right: 30px; }
+.r-pd-more { padding-right: 40px; }
+
+/* GENERIC MARGIN */
+	/* All Around */
+.mg-barely { margin: 5px; }
+.mg-less { margin: 10px; }
+.mg { margin: 20px; }
+.mg-lots { margin: 30px; }
+.mg-more { margin: 40px; }
+.mg-875 { margin: 0.875em }
+	/* Vertical */
+.v-mg-barely { margin-top: 5px; margin-bottom: 5px; }
+.v-mg-less { margin-top: 10px; margin-bottom: 10px; }
+.v-mg { margin-top: 20px; margin-bottom: 20px; }
+.v-mg-lots { margin-top: 30px; margin-bottom: 30px; }
+.v-mg-more { margin-top: 40px; margin-bottom: 40px; }
+	/* Right */
+.r-mg-barely { margin-right: 5px; }
+.r-mg-less { margin-right: 10px; }
+.r-mg { margin-right: 20px; }
+.r-mg-more { margin-right: 30px; }
+.r-mg-more { margin-right: 40px; }
+	/* Left */
+.l-mg-barely { margin-left: 5px; }
+.l-mg-less { margin-left: 10px; }
+.l-mg { margin-left: 20px; }
+.l-mg-more { margin-left: 30px; }
+.l-mg-more { margin-left: 40px; }
+	/* Top */
+.top-mg-barely { margin-top: 5px; }
+.top-mg-less { margin-top: 10px; }
+.top-mg { margin-top: 20px; }
+.top-mg-more { margin-top: 30px; }
+.top-mg-more { margin-top: 40px; }
+	/* Bottom */
+.bot-mg-none { margin-bottom: 0px; }
+.bot-mg-barely { margin-bottom: 5px; }
+.bot-mg-less { margin-bottom: 10px; }
+.bot-mg { margin-bottom: 20px; }
+.bot-mg-more { margin-bottom: 30px; }
+.bot-mg-more { margin-bottom: 40px; }
+
+
+/* Double Block Layouts */
+.double-block {
+	font-size: 0;/* The Hack */
+}
+	.double-block .block {
+		display: inline-block;
+		font-size: 16px;/* Put the hack, back */
+	}
+
+/* grid-container */
+ul.grid-container {
+	list-style: none;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+	
+	ul.grid-container li {
+		display: inline-block;
+		width: 80px;
+		padding-left: 5px;
+		padding-right: 5px;
+		vertical-align: top;
+	}
+
+	ul.grid-container li:last-child {
+		margin-left: 0;
+	}
+
+	ul.grid-container li .caption-title {
+		font-size: 0.85em;
+		font-weight: bold;
+	}
+
+	ul.grid-container li .caption-body {
+		font-size: .75em;
+	}
+
+
+/* Icon to the left of text */
+.icon-with-text {
+	position: relative;
+}
+	.icon-with-text .icon {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 20px;
+		height: 20px;
+		transform: translate(0%, -50%);
+	}
+	.icon-with-text .text {
+		padding-left: 26px;
+	}
+
+/* */
+.rounded-box {
+	padding: 20px;
+	border-radius: 5px;
+}

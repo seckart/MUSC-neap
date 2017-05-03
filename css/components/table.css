@@ -1,0 +1,109 @@
+/**
+ *	Tables
+ *
+ *	Styles pertaining to the different kinds of tables one might
+ *	find on a N.E.A.P. site
+ *
+ *
+ */
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 16px;
+}
+
+table tr th,
+table tr td {
+	padding: 0;
+}
+
+table th {
+	font-weight: bold;
+}
+
+table td {
+	background-color: #ffffff; /* white */
+}
+
+
+/* A Given Style of table that may be used
+	This particular one..  
+	*/
+table.style-1 { table-layout: fixed; }
+	table.style-1 td,
+	table.style-1 th {
+		border: 1px solid #000000; /* black */
+		font-size: .75em;
+		font-weight: bold;
+		padding: 6px;
+	}
+	table.style-1 th { 
+		background-color: #a7a7a7; /* matches .bg-light-grey */ 
+	}
+	table.style-1 td { 
+
+	}
+
+/* All font is bold. Cell borders exist and are black.
+	Normal cells are colorless and .875em (14px by default)
+	.big and .emphasis cells are light-orange and 1em (16px by default) */
+table.style-2 { table-layout: fixed; }
+	table.style-2 td,
+	table.style-2 th {
+		border: 1px solid #000000; /* black */
+		padding: 6px;
+		font-size: .875em;
+	}
+	table.style-2 th.big,
+	table.style-2 td.big {
+		font-size: 1em;
+		background-color: #FFA953; /* matches .bg-lightest-orange */
+	}
+	table.style-2 th.emphasis,
+	table.style-2 td.emphasis { 
+		background-color: #FFA953; /* matches .bg-lightest-orange */
+	}
+
+/* */
+table.style-3 { font-size: 16px; }
+	table.style-3 th { background-color: #FABF8F; }/* Matches .color-peach */
+	table.style-3 td,
+	table.style-3 th {
+		border: 1px solid #000000; /* black */
+		padding: 6px;
+		font-size: .875em;
+	}
+	table.style-3 th:nth-child(2),
+	table.style-3 td:nth-child(2) {
+		text-align: center;
+		width: 20%;
+	}
+	table.style-3 th:nth-child(3),
+	table.style-3 td:nth-child(3) {
+		width: 20%;
+	}
+
+/* table-box's are boxes that hold/present collections of tables
+	and have a collective title for all of the boxes */
+.table-box {
+	border: 1px solid #a7a7a7; /* grey */
+}
+
+	/* The Title Bar at the top of a table-box */
+	.table-box > h5 { 
+		padding: 6px 10px;
+		margin: 0;   
+	}
+
+@media screen and (max-width: 1200px) {
+	table.style-1 { font-size: 12px; }
+}
+
+@media screen and (max-width: 1100px) {
+	table.style-1 { font-size: 10px; }
+}
+
+@media screen and (max-width: 1000px) {
+	table.style-1 { font-size: 8px; }
+}

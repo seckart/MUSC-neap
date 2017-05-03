@@ -1,0 +1,61 @@
+/**
+ *	The content block is where all of the page specific stuff resides.
+ *
+ *	Every specific page's file
+ *
+ */
+.content {
+	position: relative;
+	padding: 20px 40px;
+	line-height: 1.4; /* Taller Line Height */
+}
+
+/* The Content Page Titles */
+h1.title {
+	color: #cc6600;/* Matches .color-bronze */
+}
+	h1.title img {
+		width: 130px;
+		vertical-align: middle;
+	}
+
+.section-header {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* The search box that appears on every page of the site. */
+.searchbox {
+	position: absolute; /* It's absolute within a fixed, so it's also fixed */
+	top: 64px;/* Matches the height of the .header element */
+	right: 0;
+	background-color: #eaeaea;/* matches .bg-almost-white */
+	width: 300px; /* Just picked a nice width */
+	border-bottom-left-radius: 15px;/* Rounded bottom edges */
+	border-bottom-right-radius: 15px;/* Rounded bottom edges */
+	cursor: pointer;
+	font-size: 16px;/* Inner elements use em, so this is master font size */
+	z-index: 3;/* Under the header, above the page */
+}
+	/* Hovering over the search box at any point
+		changes it's background color. */
+	.searchbox:hover {
+		background-color: #b7b7b7;/* Just some random grey i liked */
+	}
+
+	/* The text and button inputs in the search box
+		have sightly smaller font sizes */
+	.searchbox input {
+		font-size: .75em;
+	}
+
+	/* The Submit button for the search form has a different
+		background color. It uses opacity so that when the 
+		searchbox's background color changes, so too does the
+		button's background color. */
+	.searchbox input[type="submit"] {
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+		.searchbox input[type="submit"]:hover {
+			background-color: rgba(255, 255, 255, 0.6);
+		}

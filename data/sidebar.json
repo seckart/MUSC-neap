@@ -1,0 +1,111 @@
+{
+	"Outcomes &amp; Financial Impact Opportunities Snapshot" : "/index.php",
+	"NEAP: Introduction &amp; Purpose" : "/pages/NEAP_Introduction_Purpose/intro-purpose.php",
+	"Outcome Team" : "/pages/Outcome_Team/outcome-team.php",
+	"CMS Organizational-Level View" : {
+		"CMS Organizational-Level View" : "/pages/CMS_Organizational_Level_View/cms-data.php",
+		"Penalties/Bonuses" : "/pages/CMS_Organizational_Level_View/penalties-bonuses.php",
+		"Evaluating Hospitals" : "/pages/CMS_Organizational_Level_View/evaluating-hospitals.php",
+		"Outcomes" : "/pages/CMS_Organizational_Level_View/level-outcomes.php",
+		"Patient Surveys" : "/pages/CMS_Organizational_Level_View/patient-surveys.php",
+		"Timely &amp; Effective Care" : "/pages/CMS_Organizational_Level_View/timely-effective-care.php",
+		"Horizontal Intersection Hypothesis in CMS" : {
+			"Horizontal Intersection Hypothesis in CMS" : "/pages/CMS_Organizational_Level_View/Horizontal_Intersection_Hypothesis_in_CMS/horizontal-intersection-hypothesis-cms.php",
+			"Emergency" : "/pages/CMS_Organizational_Level_View/Horizontal_Intersection_Hypothesis_in_CMS/horizontal-intersection-emergency.php",
+			"Surgical" : "/pages/CMS_Organizational_Level_View/Horizontal_Intersection_Hypothesis_in_CMS/horizontal-intersection-surgical.php",
+			"Other" : "/pages/CMS_Organizational_Level_View/Horizontal_Intersection_Hypothesis_in_CMS/horizontal-intersection-other.php"
+		},
+		"CMS Incentives FAQ" : "/pages/CMS_Organizational_Level_View/cms-incentives-faq.php"
+	},
+	"Unit-Level Summary of Outcomes (ULSO)" : {
+		"Unit-Level Summary of Outcomes (ULSO)" : "/pages/Unit_Level_Summary_of_Outcomes_ULSO/ulso.php",
+		"Unit-Level Executive Summary" : "/pages/Unit_Level_Summary_of_Outcomes_ULSO/ulso-executive.php",
+		"Unit-Level Director Summary" : "/pages/Unit_Level_Summary_of_Outcomes_ULSO/ulso-director.php",
+		"Unit-Level Summary" : "/pages/Unit_Level_Summary_of_Outcomes_ULSO/ulso-view.php",
+		"Unit-Level Summary Quarterly View" : "/pages/Unit_Level_Summary_of_Outcomes_ULSO/ulso-quarterly.php",
+		"Performance Per the ULSO" : "/pages/Unit_Level_Summary_of_Outcomes_ULSO/ulso-performance.php",
+		"Magnet<sup>&reg;</sup> Data Requirements" : "/pages/Unit_Level_Summary_of_Outcomes_ULSO/ulso-magnet-requirements.php",
+		"Healthlinx<sup>&reg;</sup> Methodology" : "/pages/Unit_Level_Summary_of_Outcomes_ULSO/healthlinx-methodology.php"
+	},
+	"Internal Vertical Analysis" : {
+		"Internal Vertical Analysis" : "/pages/Internal_Vertical_Analysis/internal-vertical.php",
+		"Vertical High Risk" : "/pages/Internal_Vertical_Analysis/high-risk.php",
+		"Vertical Moderate Risk" : "/pages/Internal_Vertical_Analysis/moderate-risk.php",
+		"Vertical Low Risk" : "/pages/Internal_Vertical_Analysis/low-risk.php",
+		"Vertical Strength" : "/pages/Internal_Vertical_Analysis/no-risk.php",
+		"Financial Impact Opportunities" : "/pages/Internal_Vertical_Analysis/vertical-financial-impact.php",
+		"Action Planning &amp; Last Viable Quarter" : "/pages/Internal_Vertical_Analysis/vertical-action-plan.php",
+		"High Performance &gt; 75%" : "/pages/Internal_Vertical_Analysis/vertical-high-performance.php",
+		"Under Performance &lt; 50%" : "/pages/Internal_Vertical_Analysis/vertical-under-performance.php"
+	},
+	"Internal Horizontal Analysis" : {
+		"Internal Horizontal Analysis" : "/pages/Internal_Horizontal_Analysis/internal-horizontal.php",
+		"Horizontal Intersection Hypothesis in ULSO" : {
+			"Horizontal Intersection Hypothesis in ULSO" : "/pages/Internal_Horizontal_Analysis/Horizontal_Intersection_Hypothesis_in_ULSO/horizontal-intersection-hypothesis-ulso.php",
+			"Leadership Vacancy Hypothesis" : "/pages/Internal_Horizontal_Analysis/Horizontal_Intersection_Hypothesis_in_ULSO/leadership-vacancy-hypothesis.php",
+			"Stretch Coverage Hypothesis" : "/pages/Internal_Horizontal_Analysis/Horizontal_Intersection_Hypothesis_in_ULSO/stretch-coverage-hypothesis.php",
+			"Underperformance Hypothesis" : "/pages/Internal_Horizontal_Analysis/Horizontal_Intersection_Hypothesis_in_ULSO/underperformance-hypothesis.php",
+			"Other Hypothesis" : "/pages/Internal_Horizontal_Analysis/Horizontal_Intersection_Hypothesis_in_ULSO/other-hypothesis.php"
+		},
+		"Available Leadership to Improve Outcomes" : {
+			"Available Leadership to Improve Outcomes" : "/pages/Internal_Horizontal_Analysis/Available_Leadership_to_Improve_Outcomes/available-leadership.php",
+			"Operating Room Director" : "/pages/Internal_Horizontal_Analysis/Available_Leadership_to_Improve_Outcomes/hih-surgical.php",
+			"Operating Room Nurse Manager" : "/pages/Internal_Horizontal_Analysis/Available_Leadership_to_Improve_Outcomes/hih-or-nurse-manager.php",
+			"Emergency Room Director" : "/pages/Internal_Horizontal_Analysis/Available_Leadership_to_Improve_Outcomes/hih-ed-dir.php",
+			"Emergency Room Nurse Manager" : "/pages/Internal_Horizontal_Analysis/Available_Leadership_to_Improve_Outcomes/hih-ed-nurse-manager.php",
+			"Behavorial Health Nurse Manager" : "/pages/Internal_Horizontal_Analysis/Available_Leadership_to_Improve_Outcomes/hih-behavorial-nm.php",
+			"Critical Care Director" : "/pages/Internal_Horizontal_Analysis/Available_Leadership_to_Improve_Outcomes/hih-critical-care-dir.php",
+			"Home Health Director" : "/pages/Internal_Horizontal_Analysis/Available_Leadership_to_Improve_Outcomes/hih-home-health-dir.php"
+		},
+		"Financial Impact Opportunities" : "/pages/Internal_Horizontal_Analysis/horizontal-financial-impact.php",
+		"Summary, Action Planning &amp; Last Viable Quarter" : "/pages/Internal_Horizontal_Analysis/horizontal-action-plan.php",
+		"High Performance > 75%" : "/pages/Internal_Horizontal_Analysis/horizontal-high-performance.php",
+		"Under Performance < 50%" : "/pages/Internal_Horizontal_Analysis/horizontal-under-performance.php"
+	},
+	"External Vertical Analysis" : "/pages/External_Vertical_Analysis/external-vertical-analysis.php",
+	"External Horizontal Analysis" : "/pages/External_Horizontal_Analysis/external-horizontal-analysis.php",
+	"Pursuit of Excellence" : {
+		"Pursuit of Excellence" : "/pages/Pursuit_of_Excellence/pursuit-excellence.php",
+		"Magnet<sup>&reg;</sup> Threshold of Excellence" : "/pages/Pursuit_of_Excellence/magnet-threshold.php",
+		"Facility's Nursing Plan" : "/pages/Pursuit_of_Excellence/nursing-plan.php",
+		"Facility's Strategic Plan" : "/pages/Pursuit_of_Excellence/strategic-plan.php",
+		"Nursing Excellence Scale" : "/pages/Pursuit_of_Excellence/nursing-excellence-scale.php",
+		"Blank item 1" : "/pages/Pursuit_of_Excellence/blank-item-1.php"
+	},
+	"Priorities" : {
+		"Priorities" : "/pages/Priorities/priorities.php",
+		"Vertical Priorities" : "/pages/Priorities/vertical-priorities.php",
+		"Horizontal Priorities" : "/pages/Priorities/horizontal-priorities.php"
+	},
+	"Project Plan &amp; Timelines" : {
+		"Project Plan &amp; Timelines" : "/pages/Project_Plan_Timelines/project-plans-timelines.php",
+		"Project Analysis" : "/pages/Project_Plan_Timelines/project-analysis.php",
+		"SOE Delivery Schedule" : "/pages/Project_Plan_Timelines/soe-delivery-schedule.php",
+		"Best Practice Timeline 1" : "/pages/Project_Plan_Timelines/best-practice-timeline-1.php",
+		"Best Practice Timeline 2" : "/pages/Project_Plan_Timelines/best-practice-timeline-2.php",
+		"HealthLinx<sup>&reg;</sup> Capacity" : "/pages/Project_Plan_Timelines/healthlinx-capacity.php"
+	},
+	"Investment" : "/pages/Investment/investment.php",
+	"NEAP On-Site Presentation" : {
+		"NEAP On-Site Presentation" : "/pages/NEAP_On_Site_Presentation/neap-onsite-presentation.php",
+		"Agenda" : "/pages/NEAP_On_Site_Presentation/report-agenda.php",
+		"Future Report 1" : "/pages/NEAP_On_Site_Presentation/future-report-1.php"
+	},
+	"Comprehensive Status Reports" : {
+		"Comprehensive Status Reports" : "/pages/Comprehensive_Status_Reports/comprehensive_status_report.php",
+		"Future Report 1" : "/pages/Comprehensive_Status_Reports/future-report-1.php",
+		"Future Report 2" : "/pages/Comprehensive_Status_Reports/future-report-2.php"
+	},
+	"ULSO Quarterly Updates" : {
+		"ULSO Quarterly Updates" : "/pages/ULSO_Quarterly_Updates/quarterly_updates.php",
+		"Q1 2016" : "/pages/ULSO_Quarterly_Updates/q1-report.php",
+		"Q2 2016" : "/pages/ULSO_Quarterly_Updates/q2-report.php",
+		"Q3 2016" : "/pages/ULSO_Quarterly_Updates/q3-report.php",
+		"Q4 2016" : "/pages/ULSO_Quarterly_Updates/q4-report.php"
+	},
+	"Additional Documents" : {
+		"NEAP Agreement" : "/attachments/Winchester Medical Center NEAP K 092915.pdf"
+	},
+	"About HealthLinx<sup>&reg;</sup>" : "/pages/About_Healthlinx/about-healthlinx.php",
+	"E-Docs Demo" : "/pages/E_Docs_Demo/edocs-demo.php"
+}
