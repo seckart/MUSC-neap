@@ -26,11 +26,12 @@
 <p>
 	A four-year projection is always used because Magnet<sup>&reg;</sup> redesignation occurs in four-year increments.
 </p>
+ 
 
-
-<div class="table top-mg-more">
+<div class="table top-mg-more"> 
 
 	<div class="tr">
+		
 		<div class="td v-top bot-pd">
 			<!-- The First Table (Vertical Outcome Snapshot) -->
 			<?php include $PARTSDIR . '/tables/vertical-outcome.php'; ?>
